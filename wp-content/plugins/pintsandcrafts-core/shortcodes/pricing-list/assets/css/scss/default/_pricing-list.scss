@@ -1,0 +1,116 @@
+.pintsandcrafts-pricing-list {
+	@include edgtfRelativeHolderLayout();
+
+	&.pintsandcrafts-pli-large-space {
+
+		.pintsandcrafts-pricing-list-item {
+			margin: 0 0 30px;
+		}
+	}
+
+	.pintsandcrafts-pli-image-holder {
+		@include edgtfRelativeHolderLayout();
+		margin: 0 16px 0 0;
+		width: 87px;
+		height: 92px;
+		border-radius: 5px;
+		overflow: hidden;
+	}
+
+	.pintsandcrafts-pl-title-holder {
+		@include edgtfRelativeHolderLayout();
+		margin: 0 0 10px;
+
+		.pintsandcrafts-pl-title {
+			margin: 0;
+			padding: 20px 0;
+
+			.pintsandcrafts-pl-title-image {
+				position: absolute;
+				top: 50%;
+				@include edgtfTransform(translateY(-50%));
+			}
+		}
+	}
+
+	.pintsandcrafts-pricing-list-item {
+		@include edgtfRelativeHolderLayout();
+		margin: 0 0 25px;
+
+		&.pintsandcrafts-pli-with-image {
+
+			.pintsandcrafts-pli-content {
+				width: calc(100% - 115px);
+			}
+		}
+
+		.pintsandcrafts-pli-content {
+			@include edgtfRelativeHolderLayout();
+
+			.pintsandcrafts-pli-title-holder {
+				margin: 0 0 2px;
+
+				.pintsandcrafts-pli-title {
+					position: relative;
+					display: table-cell;
+					width: 1%;
+					padding: 0 4px 0 0;
+					margin: 0 ;
+					text-transform: uppercase;
+					white-space: nowrap;
+					line-height: 1em;
+				}
+
+				.pintsandcrafts-pli-line {
+					position: relative;
+					display: table-cell;
+					top: -5px;
+					height: 3px;
+					width: 98%;
+					border-bottom: 1px solid $first-main-color;
+					z-index: 1;
+				}
+
+				.pintsandcrafts-pli-price-holder {
+					display: table-cell;
+					width: 1%;
+					padding: 0 0 0 12px;
+					white-space: nowrap;
+
+					.pintsandcrafts-pli-price {
+						display: block;
+						color: $default-heading-color;
+						font-size: 20px;
+						font-weight: 700;
+						line-height: 0.5;
+						letter-spacing: 0.02em;
+						margin: 0;
+					}
+				}
+			}
+
+			.pintsandcrafts-pli-bottom-content {
+
+				.pintsandcrafts-pli-desc {
+
+					p {
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+
+	.pintsandcrafts-pli-link-holder {
+		margin: 50px 0 0;
+		text-align: center;
+
+		a {
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 14px;
+			font-weight: 600;
+			letter-spacing: 0.1em;
+		}
+	}
+}

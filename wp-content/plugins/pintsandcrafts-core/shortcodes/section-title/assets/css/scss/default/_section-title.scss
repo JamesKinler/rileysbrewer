@@ -1,0 +1,45 @@
+/* ==========================================================================
+   Section Title shortcode styles - begin
+   ========================================================================== */
+
+.edgtf-section-title-holder {
+    @include edgtfRelativeHolderLayout();
+	box-sizing: border-box;
+
+	.edgtf-st-title-wrap {
+		overflow: hidden;
+	}
+	
+    .edgtf-st-title {
+	    display: block;
+        margin: 0;
+    }
+
+	.edgtf-st-subtitle {
+		margin: 0 0 20px;
+		color: $first-main-color;
+	}
+
+	svg {
+		opacity: 0;
+		backface-visibility: hidden;
+		@include edgtfTransform(scaleX(0));
+		@include edgtfTransformOrigin(0 50%);
+		@include edgtfTransitionTransform(.8s cubic-bezier(.77,0,.175,1), opacity .5s ease);
+
+		&.edgtf-st-separator-appeared {
+			opacity: 1;
+			@include edgtfTransform(scaleX(1));
+		}
+	}
+    
+    .edgtf-st-text {
+	    display: block;
+        margin: 14px 0 0;
+    }
+}
+/* ==========================================================================
+   Section Title shortcode styles - end
+   ========================================================================== */
+
+

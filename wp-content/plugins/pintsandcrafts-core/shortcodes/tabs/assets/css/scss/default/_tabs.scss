@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Tabs shortcode style - begin
+   ========================================================================== */
+
+.edgtf-tabs {
+	@include edgtfRelativeHolderLayout();
+	text-align: center;
+	
+	.edgtf-tabs-nav {
+		position: relative;
+	    display: inline-block;
+	    vertical-align: middle;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		border-bottom: 1px solid $default-border-color;
+		
+		li {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			float: left;
+			margin: 0 0 -2px;
+			padding: 0;
+			text-transform: uppercase;
+
+			a {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				padding: 11px 20px;
+				font-size: 19px;
+				line-height: 28px;
+				font-weight: 700;
+				color: $default-heading-color;
+				border-bottom: 3px solid transparent;
+				box-sizing: border-box;
+				@include edgtfTransition(color .2s ease-out, background-color .2s ease-out, border-color .2s ease-out);
+			}
+
+			&.ui-state-hover a,
+			&.ui-state-active a {
+				border-color: $first-main-color;
+			}
+		}
+	}
+	
+	.edgtf-tab-container {
+		@include edgtfRelativeHolderLayout();
+		padding: 32px 0;
+		border-bottom: 1px solid $default-border-color;
+		box-sizing: border-box;
+
+		p {
+			margin: 0;
+		}
+	}
+}
+
+/* ==========================================================================
+   Tabs shortcode style - end
+   ========================================================================== */

@@ -1,0 +1,10 @@
+1.1
+- Added WooCommerce 3.4.5 compatibility
+- Added compatibility with Gutenberg plugin
+- Added compatibility with PHP 7.2
+- Updated WPBakery Page Builder to 5.5.2
+- Updated Revolution Slider to 5.4.8
+- Updated Envato Market to 2.0.1
+- Updated PintsAndCrafts Core to 1.0.1
+- Fixed issue with http/https links
+- Improved product list feature options

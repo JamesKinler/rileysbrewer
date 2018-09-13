@@ -1,0 +1,167 @@
+/* ==========================================================================
+   Portfolio Item shortcode style - begin
+   ========================================================================== */
+
+.edgtf-pcl-item {
+    @include edgtfRelativeHolderLayout();
+
+	&.edgtf-pcl-custom-size {
+
+		.edgtf-pcli-title {
+			font-size: 50px;
+			text-transform: uppercase;
+
+			@include ipad-landscape {
+				font-size: 1.5rem;
+			}
+		}
+	}
+
+	&.edgtf-pcl-image-offset {
+		margin: 0 -40px;
+
+		.edgtf-pcli-image {
+			position: relative;
+			left: 40px;
+			z-index: 2;
+		}
+
+		.edgtf-pcli-text-holder {
+			position: relative;
+			right: 40px;
+		}
+
+		@include phone-landscape {
+			margin: 0;
+			width: 100%;
+
+			.edgtf-pcli-text-holder {
+				right: 0;
+			}
+		}
+	}
+	
+	.edgtf-pcli-inner {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		
+		@include phone-landscape {
+			display: block;
+		}
+	}
+
+	.edgtf-pcli-title {
+		margin: 0 0 20px;
+	}
+
+	.edgtf-pcli-text-holder {
+		@include edgtfRelativeHolderLayout();
+		padding: 23px;
+		background: #fff;
+		box-shadow: $default-box-shadow;
+		box-sizing: border-box;
+
+		.edgtf-pcli-text-wrapper {
+			border: 1px solid $first-main-color;
+			padding: 24px 36px;
+		}
+
+		.edgtf-pcli-excerpt {
+			margin: 10px 0 25px;
+		}
+
+		.edgtf-pcli-custom {
+			display: flex;
+			flex-direction: row;
+			padding: 30px 0 25px;
+			margin: 0 -10px;
+			border-top: 1px solid $default-border-color;
+			
+			@include phone-landscape {
+				display: inline-block;
+				vertical-align: top;
+				width: 100%;
+				clear: both;
+			}
+
+			.edgtf-ps-info-item {
+				padding: 0 10px;
+				
+				@include phone-landscape {
+					padding: 10px;
+					display: inline-block;
+					vertical-align: top;
+					width: 50%;
+					float: left;
+					box-sizing: border-box;
+					
+					&:nth-child(2n+1) {
+						clear: both;
+					}
+				}
+
+				p {
+					margin: 3px 0 0;
+				}
+			}
+
+			.edgtf-ps-info-title {
+				margin: 0;
+			}
+		}
+
+		.pcl-extra-section {
+			padding: 30px 0 11px;
+			border-top: 1px solid $default-border-color;
+
+			.pcl-es {
+				display: flex;
+				flex-direction: row;
+
+				@include phone-landscape {
+					display: block;
+				}
+
+				p {
+					padding: 0 0 0 10px;
+
+					@include phone-portrait {
+						padding: 0;
+					}
+				}
+			}
+
+			.pcl-es-img {
+				min-width: 50px;
+
+				@include phone-landscape {
+					float: left;
+				}
+				
+				img {
+					width: auto !important;
+					height: auto !important;
+					max-width: 100% !important;
+				}
+			}
+
+			@include phone-portrait {
+
+				.pcl-es-img {
+					float: none;
+					text-align: center;
+				}
+			}
+
+			.pcl-es-title {
+				margin: 0 0 4px;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Item shortcode style - end
+   ========================================================================== */

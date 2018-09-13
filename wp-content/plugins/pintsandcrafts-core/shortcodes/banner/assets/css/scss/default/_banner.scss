@@ -1,0 +1,284 @@
+/* ==========================================================================
+   Banner shortcode style - begin
+   ========================================================================== */
+
+.edgtf-banner-holder {
+    @include edgtfRelativeHolderLayout();
+	
+	.touch & {
+		cursor: pointer;
+	}
+
+	&.pintsandcrafts-dark-skin {
+
+		.edgtf-banner-image {
+
+			&:after {
+				border-color: #000;
+			}
+		}
+
+		.edgtf-banner-subtitle {
+			color: #000;
+		}
+
+		.edgtf-banner-title {
+			color: #000;
+		}
+
+		.edgtf-banner-link-text {
+			color: #000;
+		}
+	}
+
+	&.edgtf-visible-on-default {
+
+		&.edgtf-has-link {
+
+			.edgtf-banner-image {
+
+				overflow: hidden;
+
+				&:after {
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					padding: 2px;
+					box-sizing: content-box;
+					z-index: 1;
+					@include edgtfTransition(all .25s ease);
+				}
+			}
+
+			&:hover {
+
+				.edgtf-banner-image {
+
+					&:after {
+						top: 20px;
+						right: 20px;
+						bottom: 20px;
+						left: 20px;
+						@include edgtfTransition(all .25s cubic-bezier(.21,.6,.44,2.18));
+					}
+				}
+			}
+		}
+
+		&.edgtf-banner-border-yellow {
+			.edgtf-banner-image {
+
+				&:after {
+					border: 1px solid $first-main-color;
+				}
+			}
+		}
+	}
+	
+	&.edgtf-visible-on-hover {
+
+		&.edgtf-has-link {
+
+			&:hover {
+
+				.edgtf-banner-image {
+
+					&:after {
+						top: 30px;
+						right: 30px;
+						bottom: 30px;
+						left: 30px;
+						@include edgtfTransition(all .25s ease);
+					}
+				}
+
+				.edgtf-banner-text-holder {
+					opacity: 1;
+
+					.edgtf-banner-title {
+						@include edgtfTransform(translateX(0));
+					}
+				}
+			}
+		}
+
+		&.edgtf-banner-border-yellow {
+			.edgtf-banner-image {
+
+				&:after {
+					border: 1px solid $first-main-color;
+				}
+			}
+		}
+		
+		.edgtf-banner-text-holder {
+			opacity: 0;
+			background-color: transparent;
+			@include edgtfTransition(opacity 0.3s ease);
+		}
+
+		.edgtf-banner-text-inner {
+			vertical-align: bottom;
+			text-align: left;
+
+			.edgtf-banner-title {
+				padding: 0 0 3px 10px;
+				@include edgtfTransform(translateX(50px));
+				@include edgtfTransitionTransform(.5s cubic-bezier(0.42, 0, 0, 1.5));
+			}
+		}
+
+		.edgtf-banner-image {
+
+			&:after {
+				top: 20px;
+				right: 20px;
+				bottom: 20px;
+				left: 20px;
+				border: 1px solid #fff;
+			}
+		}
+	}
+	
+	&.edgtf-disabled {
+		
+		.edgtf-banner-text-holder {
+			display: none;
+		}
+	}
+	
+	&.edgtf-banner-info-centered {
+		
+		.edgtf-banner-text-holder {
+			padding: 70px 20px;
+			text-align: center;
+		}
+	}
+	
+	.edgtf-banner-image {
+		@include edgtfRelativeHolderLayout();
+
+		&:after {
+			position: absolute;
+			display: block;
+			content: " ";
+			border: 1px solid #fff;
+			box-sizing: border-box;
+			@include edgtfTransition(all .25s cubic-bezier(.21,.6,.44,2.18));
+		}
+
+		img {
+			display: block;
+		}
+	}
+	
+	.edgtf-banner-text-holder {
+		@include edgtfAbsoluteHolderLayout();
+		padding: 35px;
+		background-color: rgba($default-heading-color, .4);
+		box-sizing: border-box;
+		
+		@include ipad-portrait {
+			padding: 25px;
+		}
+	}
+	
+	.edgtf-banner-text-outer {
+		@include edgtfTableLayout();
+	}
+	
+	.edgtf-banner-text-inner {
+		position: relative;
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+		height: 100%;
+		width: 100%;
+	}
+	
+	.edgtf-banner-subtitle {
+		margin: 0 0 4px;
+		color: #fff;
+	}
+	
+	.edgtf-banner-title {
+		margin: 0;
+		color: #fff;
+		
+		.edgtf-banner-title-light {
+			font-weight: 300;
+		}
+	}
+	
+	.edgtf-banner-link-text {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		margin: 11px 0 0;
+		color: #fff;
+		line-height: 1em;
+		z-index: 2;
+		@include edgtfTransform(translateZ(0));
+		
+		&:hover {
+			
+			.edgtf-banner-link-hover {
+				width: 100%;
+			}
+		}
+		
+		.edgtf-banner-link-original {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			width: 100%;
+			
+			span {
+				color: inherit;
+			}
+		}
+		
+		.edgtf-banner-link-hover {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 0.1%;
+			height: 100%;
+			display: inline-block;
+			vertical-align: top;
+			white-space: nowrap;
+			overflow: hidden;
+			@include edgtfTransition(width .4s ease-in-out);
+			
+			span {
+				color: $first-main-color;
+			}
+		}
+		
+		.edgtf-banner-link-icon,
+		.edgtf-banner-link-label {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+		}
+		
+		.edgtf-banner-link-icon {
+			margin: 0 2px 0 0;
+			font-size: 15px;
+		}
+		
+		.edgtf-banner-link-label {
+			font-size: 14px;
+			line-height: inherit;
+		}
+	}
+
+	.edgtf-banner-link {
+		@include edgtfAbsoluteHolderLayout();
+		z-index: 1;
+	}
+}
+/* ==========================================================================
+   Banner shortcode style - end
+   ========================================================================== */

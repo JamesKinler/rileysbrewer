@@ -1,0 +1,148 @@
+/* ==========================================================================
+   Process shortcode style - begin
+   ========================================================================== */
+
+.edgtf-process-holder {
+	@include edgtfRelativeHolderLayout();
+	
+	$columns: ('two', 'three', 'four');
+	@for $i from 0 to length($columns) {
+		&.edgtf-#{nth($columns, $i+1)}-columns {
+			$column_width: 100%/($i+2);
+			
+			.edgtf-mark-horizontal-holder {
+				
+				.edgtf-process-mark {
+					width: $column_width;
+				}
+			}
+			
+			.edgtf-process-item {
+				width: $column_width;
+			}
+		}
+	}
+	
+	&.edgtf-process-appeared {
+		
+		.edgtf-process-item {
+			opacity: 1;
+			@include edgtfTransform(scale(1));
+
+			.edgtf-process-image {
+
+				&:after {
+					width: 100px;
+				}
+			}
+		}
+	}
+	
+	.edgtf-process-inner {
+		margin: 0;
+	}
+	
+	.edgtf-process-item {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		float: left;
+		padding: 0 23px;
+		background-color: transparent;
+		text-align: center;
+		box-sizing: border-box;
+		z-index: 1;
+		opacity: 0;
+		@include edgtfTransform(scale(0.7));
+		@include edgtfTransitionTransform(.5s cubic-bezier(.21,.6,.44,2.18), opacity .5s ease);
+		
+		@for $i from 1 to 5 {
+			
+			&:nth-child(#{$i}) {
+				-webkit-transition-delay: #{.2 * ($i - 1)}s;
+				-moz-transition-delay: #{.2 * ($i - 1)}s;
+				transition-delay: #{.2 * ($i - 1)}s;
+
+				.edgtf-process-image {
+
+					&:after {
+						-webkit-transition-delay: #{.2 * $i}s;
+						-moz-transition-delay: #{.2 * $i}s;
+						transition-delay: #{.2 * $i}s;
+					}
+				}
+			}
+		}
+
+		&:last-child {
+
+			.edgtf-process-image {
+
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.edgtf-process-image {
+		position: relative;
+
+		&:after {
+			position: absolute;
+			display: block;
+			content: " ";
+			top: 50%;
+			right: -72px;
+			width: 0;
+			border-bottom: 7px solid $first-main-color;
+			z-index: 1;
+			@include edgtfTransform(translateY(-50%));
+			@include edgtfTransition(width .25s ease);
+		}
+
+		.edgtf-process-image-inner {
+			position: relative;
+			vertical-align: middle;
+			display: inline-block;
+			width: auto;
+			margin: 0 auto;
+			border-radius: 100%;
+			background-color: #fff;
+			z-index: 2;
+
+			&:after {
+				position: absolute;
+				display: block;
+				content: " ";
+				top: 20px;
+				left: 20px;
+				width: calc(100% - 40px);
+				height: calc(100% - 40px);
+				border: 1px solid $first-main-color;
+				border-radius: 50%;
+			}
+
+			img {
+				position: relative;
+				display: block;
+			}
+		}
+	}
+	
+	.edgtf-pi-content {
+		@include edgtfRelativeHolderLayout();
+		margin: 38px 0 10px;
+	}
+	
+	.edgtf-pi-title {
+		margin: 0;
+	}
+	
+	.edgtf-pi-text {
+		margin: 19px 0 0;
+	}
+}
+/* ==========================================================================
+   Process shortcode style - end
+   ========================================================================== */

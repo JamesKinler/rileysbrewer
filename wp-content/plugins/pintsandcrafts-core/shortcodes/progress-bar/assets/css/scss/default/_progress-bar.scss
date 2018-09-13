@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Progress Bar shortcode style - begin
+   ========================================================================== */
+
+.edgtf-progress-bar {
+    @include edgtfRelativeHolderLayout();
+    
+    .edgtf-pb-title-holder {
+        position: relative;
+        margin: 10px 0 6px;
+        
+        .edgtf-pb-title {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+			text-transform: uppercase;
+            z-index: 100;
+        }
+    }
+	
+    .edgtf-pb-percent {
+        position: absolute;
+		display: inline-block;
+		right: 0;
+		bottom: 0;
+		width: auto;
+		font-family: 'Volkorn';
+		font-size: 15px;
+	    opacity: 0;
+	    z-index: 10;
+        
+        &:after {
+            content: '%';
+        }
+    }
+
+    .edgtf-pb-content-holder {
+        position: relative;
+		padding: 1px 0;
+        height: 10px;
+        overflow: hidden;
+		border: 1px solid #888;
+		box-sizing: border-box;
+        
+        .edgtf-pb-content {
+			position: relative;
+            height: 6px;
+			left: 1px;
+            max-width: 100%;
+            overflow: hidden;
+            background-color: $first-main-color;
+			box-sizing: border-box;
+        }
+    }
+}
+/* ==========================================================================
+   Progress Bar shortcode style - end
+   ========================================================================== */

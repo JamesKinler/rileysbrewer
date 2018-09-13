@@ -1,0 +1,19 @@
+@include phone-landscape {
+
+	.pintsandcrafts-pricing-list {
+		
+		.pintsandcrafts-pli-image-holder {
+			display: none;
+		}
+		
+		.pintsandcrafts-pricing-list-item {
+			
+			&.pintsandcrafts-pli-with-image {
+				
+				.pintsandcrafts-pli-content {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

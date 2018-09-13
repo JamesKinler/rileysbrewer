@@ -1,0 +1,141 @@
+/* ==========================================================================
+   Process shortcode responsive style - begin
+   ========================================================================== */
+
+.edgtf-process-holder {
+	
+	@include laptop-landscape-medium {
+		
+		&.edgtf-responsive-1280 {
+			
+			.edgtf-process-inner {
+				@include edgtfRelativeHolderLayout();
+				padding: 0 20px;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			
+			.edgtf-process-item {
+				width: 100%;
+				float: none;
+				padding: 0;
+				text-align: inherit;
+			}
+		}
+	}
+	
+	@include ipad-landscape {
+		
+		&.edgtf-responsive-1024 {
+			
+			.edgtf-process-inner {
+				@include edgtfRelativeHolderLayout();
+				padding: 0 20px;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			
+			.edgtf-process-item {
+				width: 100%;
+				float: none;
+				padding: 0;
+				margin: 0 0 25px;
+				text-align: center;
+
+				.edgtf-process-image {
+
+					&:after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	
+	@include ipad-portrait {
+		
+		&.edgtf-responsive-768 {
+			
+			.edgtf-process-inner {
+				@include edgtfRelativeHolderLayout();
+				padding: 0 20px;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			
+			.edgtf-process-item {
+				width: 100%;
+				float: none;
+				padding: 0;
+				margin: 0 0 25px;
+				text-align: center;
+
+				.edgtf-process-image {
+
+					&:after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	
+	@include phone-landscape {
+		
+		&.edgtf-responsive-680 {
+			
+			.edgtf-process-inner {
+				@include edgtfRelativeHolderLayout();
+				padding: 0 20px;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			
+			.edgtf-process-item {
+				width: 100%;
+				float: none;
+				padding: 0;
+				margin: 0 0 25px;
+				text-align: center;
+
+				.edgtf-process-image {
+
+					&:after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	
+	@include phone-portrait {
+		
+		&.edgtf-responsive-480 {
+			
+			.edgtf-process-inner {
+				@include edgtfRelativeHolderLayout();
+				padding: 0 20px;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			
+			.edgtf-process-item {
+				width: 100%;
+				float: none;
+				padding: 0;
+				margin: 0 0 25px;
+				text-align: center;
+
+				.edgtf-process-image {
+
+					&:after {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Process shortcode responsive style - end
+   ========================================================================== */

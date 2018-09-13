@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Banner shortcode style - begin
+   ========================================================================== */
+
+.edgtf-if-holder {
+    @include edgtfRelativeHolderLayout();
+	
+	.touch & {
+		cursor: pointer;
+	}
+	
+	.edgtf-if-text-holder {
+		padding: 106px 70px;
+		background-color: #fff;
+		background-position: center;
+		background-repeat: no-repeat;
+		box-shadow: $default-box-shadow;
+		box-sizing: border-box;
+
+		&:after {
+			position: absolute;
+			display: block;
+			content: " ";
+			top: 21px;
+			left: 21px;
+			width: calc(100% - 42px);
+			height: calc(100% - 42px);
+			border: 1px solid $first-main-color;
+			z-index: 0;
+		}
+		
+		@include ipad-portrait {
+			padding: 50px;
+		}
+	}
+	
+	.edgtf-if-text-outer {
+		@include edgtfTableLayout();
+	}
+	
+	.edgtf-if-text-inner {
+		position: relative;
+		display: table-cell;
+		vertical-align: middle;
+		text-align: left;
+		height: 100%;
+		width: 100%;
+		z-index: 3;
+
+		p {
+			margin: 22px 0 10px;
+			
+			@include ipad-portrait {
+				max-height: 190px;
+				overflow: hidden;
+			}
+		}
+	}
+	
+	.edgtf-if-title {
+		margin: 0;
+	}
+
+	.edgtf-if-btn-wrap {
+		margin: 38px 0 0;
+	}
+}
+/* ==========================================================================
+   Banner shortcode style - end
+   ========================================================================== */

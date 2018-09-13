@@ -1,0 +1,129 @@
+# Copyright (C) 2018 PintsAndCrafts Instagram Feed
+# This file is distributed under the same license as the PintsAndCrafts Instagram Feed package.
+msgid ""
+msgstr ""
+"Project-Id-Version: PintsAndCrafts Instagram Feed 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/pintsandcrafts-instagram-feed\n"
+"POT-Creation-Date: 2018-03-21 11:35:58+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: widgets/pintsandcrafts-instagram-widget.php:13
+msgid "Edge Instagram Widget"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:15
+msgid "Display your Instagram feed"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:27
+msgid "Title"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:32
+msgid "Type"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:34
+msgid "Gallery"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:35
+msgid "Carousel"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:41
+msgid "Number of Columns"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:43
+msgid "Two"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:44
+msgid "Three"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:45
+msgid "Four"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:46
+msgid "Six"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:47
+msgid "Eight"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:48
+msgid "Nine"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:54
+msgid "Number of Photos"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:59
+msgid "Image Size"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:61
+#: widgets/pintsandcrafts-instagram-widget.php:72
+msgid "Small"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:62
+msgid "Medium"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:63
+msgid "Large"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:69
+msgid "Space Between Items"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:71
+msgid "Normal"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:73
+msgid "Tiny"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:74
+msgid "No Space"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:80
+msgid "Show Instagram Icon"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:82
+msgid "Yes"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:83
+msgid "No"
+msgstr ""
+
+#: widgets/pintsandcrafts-instagram-widget.php:89
+msgid "Images Cache Time"
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "PintsAndCrafts Instagram Feed"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Plugin that adds Instagram feed functionality to our theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Edge Themes"
+msgstr ""

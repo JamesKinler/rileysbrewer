@@ -1,0 +1,1 @@
+<?php do_action( 'pintsandcrafts_edge_get_footer_template' );

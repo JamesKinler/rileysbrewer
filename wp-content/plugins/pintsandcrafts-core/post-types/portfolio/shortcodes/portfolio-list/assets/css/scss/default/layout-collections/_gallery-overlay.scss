@@ -1,0 +1,88 @@
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Overlay style - begin
+   ========================================================================== */
+
+.edgtf-portfolio-list-holder {
+	
+	&.edgtf-pl-gallery-overlay {
+		
+		&.edgtf-pl-has-shadow {
+			
+			.edgtf-pl-item-inner {
+				box-shadow: $default-box-shadow;
+			}
+		}
+		
+		article {
+			
+			&:hover {
+
+				.edgtf-pli-image {
+
+					img {
+						@include edgtfTransform(scale(1.08) translateZ(0));
+						@include edgtfTransitionTransform(.3s cubic-bezier(.77,0,.175,1));
+					}
+				}
+				
+				.edgtf-pli-text-holder {
+					opacity: 1;
+				}
+			}
+			
+			.edgtf-pl-item-inner {
+				overflow: hidden;
+			}
+
+			.edgtf-pli-image {
+				overflow: hidden;
+
+				img {
+
+					@include edgtfTransform(scale(1) translateZ(0));
+					@include edgtfTransitionTransform(.25s ease);
+				}
+			}
+			
+			.edgtf-pli-text {
+				
+				.edgtf-pli-title,
+				.edgtf-pli-excerpt {
+					color: #000;
+				}
+
+				.edgtf-pli-excerpt {
+					padding: 0 13%;
+
+					@include laptop-landscape-mac {
+						padding: 0 8%;
+					}
+				}
+				
+				.edgtf-pli-category-holder {
+					
+					a {
+						color: #777;
+						
+						&:hover {
+							color: #000;
+						}
+					}
+				}
+			}
+		}
+		
+		.edgtf-pli-text-holder {
+			@include edgtfAbsoluteHolderLayout();
+			padding: 20px;
+			background-color: rgba(255,255,255, 0.9);
+			opacity: 0;
+			text-align: center;
+			box-sizing: border-box;
+			@include edgtfTransition(opacity .3s ease);
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Item Layout - Gallery Overlay style - end
+   ========================================================================== */

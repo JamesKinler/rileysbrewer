@@ -1,0 +1,145 @@
+/* ==========================================================================
+   Portfolio Single navigation style - begin
+   ========================================================================== */
+
+.edgtf-ps-navigation {
+	position: relative;
+	display: table;
+	width: 100%;
+	vertical-align: middle;
+	padding: 0;
+	margin: 120px 0 0;
+	clear: both;
+    box-sizing: border-box;
+
+    .edgtf-ps-full-width-custom-layout & {
+        padding: 0 40px;
+    }
+	
+	.edgtf-ps-back-btn {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		display: inline-block;
+		vertical-align: middle;
+		@include edgtfTransform(translateX(-50%) translateY(-50%));
+		
+		a {
+			position: relative;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-flex-wrap: wrap;
+			flex-wrap: wrap;
+			margin: 0;
+			padding: 0;
+			vertical-align: middle;
+			width: 25px;
+			height: 25px;
+			line-height: 1;
+			cursor: pointer;
+
+			&:hover {
+
+				span {
+					background-color: $first-main-color;
+				}
+			}
+
+			span {
+				width: 6px;
+				height: 6px;
+				margin: 1px;
+				background-color: $default-heading-color;
+				border-radius: 50%;
+				@include edgtfTransition(background-color 0.23s);
+			}
+		}
+	}
+	
+	.edgtf-ps-prev,
+	.edgtf-ps-next {
+		position: relative;
+		display: table-cell;
+		vertical-align: middle;
+		width: 49%;
+		padding: 0;
+		box-sizing: border-box;
+		
+		a {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 19px;
+			line-height: 20px;
+			
+			.edgtf-ps-nav-mark {
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 19px;
+				font-weight: 700;
+				text-transform: uppercase;
+				
+				&:before {
+					display: inline-block;
+					vertical-align: middle;
+					line-height: inherit;
+				}
+
+				span {
+					display: inline-block;
+					vertical-align: middle;
+					font-family: $default-text-font;
+				}
+
+				&.fa-arrow-right {
+
+					&:before {
+						content: "";
+					}
+
+					&:after {
+						display: inline-block;
+						vertical-align: middle;
+						content: "\f061";
+						line-height: inherit;
+					}
+				}
+			}
+		}
+	}
+	
+	.edgtf-ps-prev {
+		
+		a {
+			
+			.edgtf-ps-nav-mark {
+				left: 0;
+
+				span {
+					margin: 0 0 0 9px;
+				}
+			}
+		}
+	}
+	
+	.edgtf-ps-next {
+		text-align: right;
+		
+		a {
+			
+			.edgtf-ps-nav-mark {
+				right: 0;
+
+				span {
+					margin: 0 9px 0 0;
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Portfolio Single navigation style - end
+   ========================================================================== */
